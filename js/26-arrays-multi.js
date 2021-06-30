@@ -59,7 +59,7 @@ console.log(busqueda);
 var busqueda = cadenaarreglo.findIndex(caracter=>caracter == "a");//IGUAL QUE FIND PERO BUSCA EL INDICE
 console.log(busqueda);
 
-/** en un arreglo numerico con el metodo some se puede encontrar mediante una comparacion
+/** en un arreglo numerico con el metodo some, se pueden encontrar mediante una comparacion
  * valores q cumplan cierta condicion por ejemplo
  */
 
