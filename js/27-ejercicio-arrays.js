@@ -25,7 +25,7 @@ function displayarray(arreglo,textCustom = "")
 
 for (let i=0;i<6;i++)
 {
-    do { var value = parseInt(prompt("insert a numeric value",0)); }
+    do { var value = parseInt(prompt("insert a numric value",0)); }
     while(isNaN(value));
     arreglonumeros[i]=value;
 }
