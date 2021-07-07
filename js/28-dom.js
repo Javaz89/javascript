@@ -16,7 +16,9 @@ function changecolor(color){
 
 //var caja=document.getElementById("almacenaje");// se invoca a un elemento del html a traves de su Id
 var caja=document.querySelector("#almacenaje");//se usa "#" para seleccionar elementos por id, "." para clases
-
+//querySelector solo selecciona el primer elemento d todos en caso de haber varios en la misma clase 
+//es recomendado solo para indice, en caso de querer seleccionar varios elementos con la misma clase
+// usar querySelectorAll
 caja.innerHTML="modificando el texto del objeto con id almacenaje al que la variable caja hace referencia";
 caja.style.background='red';
 caja.style.padding="20px";
@@ -42,4 +44,13 @@ for(let indice in todoslosdivs)
 }
 seccion.append(hr2);
 //obtener elemento a traves de su clase
-console.log(seccion);
+
+var divrojos = document.getElementsByClassName("rojo");
+for(let indice in divrojos)
+{
+    if (divrojos[indice].className == "rojo")
+    {
+    divrojos[indice].style.background="red";
+    }
+}
+
