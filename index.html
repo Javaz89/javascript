@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <title>no ejecuta alertas</title>
-    </head>
-    <body>
-        <h1>Loading data...</h1>
-        <hr>
+
+<head>
+    <meta charset="utf-8">
+    <title>no ejecuta alertas</title>
+    <script type="text/javascript" src="js/31-timers.js"></script>
+</head>
+
+<body>
+    <h1>Loading data...</h1>
+    <p>
+        <!--se puede utilizar dentro del boton codigo js para capturar un evento 
+        ondblclick="colorboton();", click="colorboton();, etc pero el codigo no 
+        estaria completamente encapsulado en el archivo js, por eso se utiliza mejor
+        el metodo button.addEventListener al cual se le envia como parametros, el evento
+        que se quiere capturar junto con una funcion de callback que sera ejecutara al ocurrir
+        el evento.-->
+        <button name="inicio" id="boton_inicio">Inicio</button>
+
+    <form>
+        <input type="text" name="nombre" id="input_nombre">
+    </form>
+    </p>
+    <!-- tabla de ejemplo
         <table border="1">
             <th>
                 <td>firstname</td>
@@ -17,17 +33,18 @@
                 <td>Data2</td>
             </tr>
         </table>
-        <br/>
-        <div id=almacenaje>"hello1"</div>        
-        <div class="amarillo">"hello2"</div>     
-        <div class="rojo">"hello3"</div>     
-        <div class="rojo">"hello4"</div>     
-        <section id="seccion1"> </section>
-        <!--
+        -->
+    <br />
+    <div id=almacenaje>"hello1"</div>
+    <hr>
+    <div class="amarillo">"hello2"</div>
+    <div class="rojo">"hello3"</div>
+    <div class="rojo">"hello4"</div>
+    <section id="seccion1"> </section>
+    <!--
         <script type="text/javascript" src="js/28-dom.js"></script>
         <script type="text/javascript" src="js/29-bom.js"></script>
         -->
-        <script type="text/javascript" src="js/30-eventos.js"></script>
+</body>
 
-    </body>
 </html>
