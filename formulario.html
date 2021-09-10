@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang= "es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Ejercicio DOM, Eventos y funciones</title>
+        <script type="text/javascript" src="js/32-ejercicio-dom.js" ></script>
+        <style>
+            .caja{
+                width: 250px;
+                height: 250px;
+                float: left;
+                margin: 20px;
+            }
+            .punteada{
+                border: 3px dashed black;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            1. formulario con los campos nombre, apellidos y edad
+            2. boton de enviar formulario: evento submit
+            3. mostrar datos en la pantalla
+            4. validacion de formulario...
+        -->
+        <h1>Aprendiendo js javazgt :)....</h1>
+        <div class="caja" >
+            <form action="" method="POST" id="formulario1" onsubmit="return false;"><!--onsubmit returnfasle evita que el formulario se envie via html pues seguramente existe en js algun evento que se desencadene y envie el formulario...-->
+                <label for="nombre"  >Nombre: </label> <br/>
+                <input type="text" name="nombre" id="nombre" /> <br/>
+                <span id="errorNombre"></span>
+
+                <label for="apellido">Apellido: </label> <br/>
+                <input type="text" name="apellido" id="apellido" /> <br/>    
+
+                <label for="edad">Edad: </label><br/>
+                <input type="number" name="edad" id="edad" /> <br/>
+
+                <input type="submit" value="Enviar :)" id="enviar" />
+            </form>
+        </div>
+        <div class="caja punteada">
+            <h3>User data</h3>
+            <p id="contenedor"></p>
+            <br/>
+        </div>
+
+    </body>
+</html>
