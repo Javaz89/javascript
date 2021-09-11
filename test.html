@@ -1,16 +1,15 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
+      <meta charset="UTF-8">
 <!-- este pequeño ejemplo agrega y elimina un elemento en html a traves de javascript-->
+
 <script type="text/javascript">
 
-
 function create(){
-
 var createstuff = document.createElement("p");
 createstuff.innerHTML="Stuff";
 document.getElementById("container").appendChild(createstuff);
-
-
 }
 
 function destroy(){
@@ -20,16 +19,10 @@ document.getElementById("container").removeChild(olddata);
 
 }
 </script>
-
         <title>Javascript2_lesson11</title>
-
 </head>
 <body>
       <input type="button" value="Psst over here" onmouseover="create();" onmouseout="destroy();">
-
       <p id="container"></p>
-
-
-
 </body>
 </html>
